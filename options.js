@@ -4,6 +4,10 @@ var x = 5;
 var y = 10;
 var lastNum = 0;
 var arr_color = ['#3369E8', '#D50F25', '#EEB211', '#009925'];
+
+//hiding of save button
+$("#imgBtn").hide();
+
 //function to redraw google image in Canvas
 function drawCanvas(pos, text) {
     var indx = (pos / 4).toString();
@@ -35,13 +39,22 @@ var el = document.getElementById("usrBtn");
 el.addEventListener('click', function () {
     //console.log($("#usrTxt").val());
     var data = $("#usrTxt").val();
-    var datArr = data.split('');
-    ctx.clearRect(0, 0, 700, 700);
-    x = 5;
-    y = 10;
-    for (i = 1; i <= datArr.length; i++) {
-        //console.log(datArr[i-1])
-        drawCanvas(i, datArr[i - 1]);
+    data.trim(/^\s+|\s+$/g,'');
+    if(data.length > 0 && data.length < 9){
+	    var datArr = data.split('');
+	    ctx.clearRect(0, 0, 700, 700);
+	    x = 5;
+	    y = 10;
+	    for (i = 1; i <= datArr.length; i++) {
+	        //console.log(datArr[i-1])
+	        drawCanvas(i, datArr[i - 1]);
+	    }
+	    $("#imgBtn").show();
+    }
+    else{
+    	$("#imgBtn").hide();
+		alert("No of characters should be less than nine");
+    	
     }
 
 });
