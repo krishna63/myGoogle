@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "mygoogle",
+  "description": "Use your fav image as google image...",
+  "version": "1.0",
+  "content_scripts":[
+    {
+      "matches" : ["<all_urls>"],
+      "js":["jquery.js","bg.js","options.js"],
+      "run_at" : "document_idle",
+      "all_frames":false
+    }
+   ],
+   "options_page" : "options.html",
+   "permissions": [ "tabs","storage" ]
+}

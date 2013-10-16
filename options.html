@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script src="jquery.js"></script> 
+	<style type="text/css">
+		.abCenter{
+			width:500px;
+			height:300px;
+			outline:0px solid orange;
+			margin:auto;
+			position:absolute;
+			top:0;bottom:0; 
+			left:0;right:0;
+		}
+		.anthrCenter{
+			margin-left: 110px;
+		}
+	</style>
+</head>
+<body>
+	<div class="abCenter">
+		Font Style:
+		<select id="selectFont">
+			<option value="Catull">Catull(default)</option>
+			<option value="Comic Sans MS">Comic Sans MS</option>
+			<option value="Trebuchet MS">Trebuchet MS</option>
+			<option value="Apple Chancery">Apple Chancery</option>
+		</select>
+		<br/><br/><br/>
+		<canvas id="canvasid" width="500px" height="180px" style="margin-left: 75px">
+			NoSupport for canvas sorry...
+		</canvas><br/>
+		<div class="anthrCenter">
+		<input type="text" id="usrTxt" style="width:300px;height:25px"/><br/>
+		<input type="button" id="usrBtn" value="Generate Image" />
+		<input type="button" id="imgBtn" value="Save Image" />
+		</div>
+	</div>
+</body>
+<script src="options.js"></script> 
+</html>
