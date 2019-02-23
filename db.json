@@ -1,0 +1,89 @@
+{
+	"heroNames": [{
+			"id": 1,
+			"name": "Bala krishna",
+			"profileImage": "http://lorempixel.com/100/100/nature/"
+		},
+		{
+			"id": 2,
+			"name": "Allu Arjun",
+			"profileImage": "http://lorempixel.com/100/100/nature/"
+		},
+		{
+			"id": 3,
+			"name": "Mahesh Babu",
+			"profileImage": "http://lorempixel.com/100/100/nature/"
+		},
+		{
+			"id": 4,
+			"name": "Venkatesh",
+			"profileImage": "http://lorempixel.com/100/100/nature/"
+		},
+		{
+			"id": 5,
+			"name": "Chiranjeevi",
+			"profileImage": "http://lorempixel.com/100/100/nature/"
+		}
+	],
+	"carsList": [{
+			"id": 14,
+			"carName": "Scorpio",
+			"brandName": "Mahendra",
+			"launchDate": "20/06/2002"
+		},
+		{
+			"id": 10,
+			"carName": "Sunny",
+			"brandName": "Nissan",
+			"launchDate": "12/06/2018"
+		},
+		{
+			"id": 13,
+			"carName": "baleno",
+			"brandName": "Maruti",
+			"launchDate": "18/01/2019"
+		},
+		{
+			"id": 11,
+			"carName": "Verna",
+			"brandName": "Hyundai",
+			"launchDate": "14/08/2017"
+		},
+		{
+			"id": 15,
+			"carName": "XUV 500",
+			"brandName": "Mahendra",
+			"launchDate": "25/11/2009"
+		},
+		{
+			"id": 12,
+			"carName": "i10",
+			"brandName": "Hyundai",
+			"launchDate": "13/07/2013"
+		}
+	],
+	"comments": [{
+			"id": 1,
+			"body": "first comment for postid 1",
+			"postId": 1
+		},
+		{
+			"id": 2,
+			"body": "second comment for postid 1",
+			"postId": 1
+		},
+		{
+			"id": 1,
+			"body": "first comment for postid 2",
+			"postId": 2
+		},
+		{
+			"id": 2,
+			"body": "second comment for postid 2",
+			"postId": 2
+		}
+	],
+	"profile": {
+		"name": "krishna63"
+	}
+}
